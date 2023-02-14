@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f30d40df6a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Text editor</title>
+</head>
+
+<body>
+
+    <section class="bg-gray-400 pb-12">
+        <h1 class="text-5xl text-center pt-12">My Text Editor</h1>
+        <div class="flex w-3/4 justify-around mx-auto mt-12">
+            <div>
+                <button class='mr-3' id="bold-btn"><i class="fa-solid fa-bold"></i></button>
+                <button class='mr-3' id="italic-btn"><i class="fa-solid fa-italic"></i></button>
+                <button class='mr-3' id="underline-btn"><i class="fa-solid fa-underline"></i></button>
+            </div>
+            <div>
+
+                <button class='mr-3' id="left-align-btn"><i class="fa-solid fa-align-left"></i></button>
+                <button class='mr-3' id="center-align-btn"><i class="fa-solid fa-align-center"></i></button>
+                <button class='mr-3' id="right-align-btn"><i class="fa-solid fa-align-right"></i></button>
+                <button class='mr-3' id="justify-btn"><i class="fa-solid fa-align-justify"></i></button>
+            </div>
+            <div>
+                <input class='mr-3 w-12 rounded-lg pl-3' id="font-size-number" type="number" name="" id="">
+                <!-- <button class='mr-3' id="toggle-case">aA</button> -->
+                <button class='mr-3' id="capitalized">Aa</button>
+                <button class='mr-3' id="upper-case">ABC </button>
+                <button class='mr-3' id="lower-case">aa</button>
+                <input id="color-change" class='rounded-lg' type="color" name="" id="color-input">
+            </div>
+        </div>
+        <textarea class="w-3/4 mx-auto block mt-12 rounded-lg p-5" id="text-field" cols="100" rows="10"></textarea>
+    </section>
+    <script src="js/editor.js"></script>
+</body>
+
+</html>
